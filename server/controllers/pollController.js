@@ -10,7 +10,7 @@ exports.getPolls = async (req, res) => {
     // Total polls count
     const [totalRows] = await pool.query("SELECT COUNT(*) AS count FROM polls");
     const totalPolls = totalRows[0].count;
-
+// 
     // Fetch polls with options
     const [polls] = await pool.query(
       `SELECT id AS pollId, user_id AS userId, question, multiple_choice, created_at
