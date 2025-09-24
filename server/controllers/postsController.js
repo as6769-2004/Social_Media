@@ -9,7 +9,7 @@ exports.getPosts = async (req, res) => {
 
     const [totalRows] = await pool.query("SELECT COUNT(*) as count FROM posts");
     const totalPosts = totalRows[0].count;
-
+// 
     const [posts] = await pool.query(
       `SELECT 
          p.id, 
