@@ -4,7 +4,7 @@
   "description": "A full-stack social media mini-platform where users can create profiles, share posts, like, comment, and follow each other.  \r Built with a **backend-first architecture** (Node.js + PostgreSQL/MongoDB) and a modern **React frontend**.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no tests specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
