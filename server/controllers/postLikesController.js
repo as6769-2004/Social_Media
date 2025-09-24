@@ -13,7 +13,7 @@ exports.likePost = async (req, res) => {
       "INSERT IGNORE INTO post_likes (post_id, user_id) VALUES (?, ?)",
       [postId, userId]
     );
-
+// 
     // Get updated likes count
     const [likes] = await pool.query(
       "SELECT COUNT(*) AS likesCount FROM post_likes WHERE post_id = ?",
