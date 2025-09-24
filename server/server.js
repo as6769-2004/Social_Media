@@ -16,3 +16,4 @@ app.use("/postlikes", likesRoutes);
 app.use("/poll", pollRoutes);
 
 app.listen(5000, () => console.log("Server running on port 5000"));
+ 
