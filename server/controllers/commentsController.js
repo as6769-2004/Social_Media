@@ -7,7 +7,7 @@ exports.addComment = async (req, res) => {
 
   if (!userId || !text || text.trim() === "")
     return res.status(400).json({ error: "Invalid input" });
-
+// 
   try {
     // Optional: limit one comment per user per post (can remove if multiple allowed)
     const [existing] = await pool.query(
