@@ -6,3 +6,5 @@ router.post("/:postId/comments", commentsController.addComment);
 router.delete("/:postId/comments", commentsController.deleteComment);
 
 module.exports = router;
+
+//
